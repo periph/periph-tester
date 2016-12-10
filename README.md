@@ -26,7 +26,8 @@ The recommended pin-outs for various platforms are as follows.
 | wr-en    |              | csid0(132)<br>pin U14-31      | gpio83<br>pin 7           |
 | LED      |              | csid1(133)<br>pin U14-32      | gpio100<br>pin 31         |
 | PWM      |              | pwm0(34)<br>pin U13-18        | gpio108<br>pin 33         |
-| ADC      |              | lradc<br>ping U14-11          | adc.ain1<br>pin 37        |
+| ADC      |              | lradc<br>pin U14-11           | adc.ain1<br>pin 37        |
+| GPIO     |              | xpio-p6&p7, ap-eint1&ap-eint3 |                           |
 
 Usage
 -----

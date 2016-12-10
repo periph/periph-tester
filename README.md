@@ -6,6 +6,15 @@ hardware device interface library.
 
 ![pcb](https://644db4de3505c40a0444-327723bce298e3ff5813fb42baeefbaa.ssl.cf1.rackcdn.com/e0db759f008a1230f58606541e16706f.png)
 
+The board allows simple testing of i2c, spi, 1-wire, pwm, and analog.
+Gpio can be tested by connecting two pins (preferably interrupt-capable) outside the board.
+I2C can be tested by exercising an i2c eeprom and the i2c to 1-wire interface chip.
+SPI can be tested by exercising an spi eeprom.
+1-wire can be tested be exercising a 1-wire eeprom and a 1-wire temperature sensor.
+PWM and ADC can be tested by outputting waveforms with varying duty cycles and reading the level of a low-pass filter.
+A gpio pin is connected to the write-enable of the I2C and SPI eeproms and can be used to
+simulate certain errors by write-protecting the eeproms.
+
 Standard pin-outs
 -----------------
 The recommended pin-outs for various platforms are as follows.

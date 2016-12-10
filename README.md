@@ -27,7 +27,7 @@ The recommended pin-outs for various platforms are as follows.
 | LED      |              | csid1(133)<br>pin U14-32      | gpio100<br>pin 31         |
 | PWM      |              | pwm0(34)<br>pin U13-18        | gpio108<br>pin 33         |
 | ADC      |              | lradc<br>pin U14-11           | adc.ain1<br>pin 37        |
-| GPIO     |              | xpio-p6&p7, ap-eint1&ap-eint3 |                           |
+| GPIO     |              | xpio-p6&p7<br>pins U14-19&20<br>ap-eint1&ap-eint3<br>pins U14-23&24 |                           |
 
 Usage
 -----
@@ -35,6 +35,8 @@ Usage
 ### CHIP
 - periph-smoketest -v i2c-testboard -bus 1 -wc 132
 - periph-smoketest -v spi-testboard -wp 132
+- periph-smoketest -v gpio 1019 1020
+- periph-smoketest -v gpio 35 193
 
 ### ODROID-C1
 - periph-smoketest -v i2c-testboard -bus 2 -wc 83

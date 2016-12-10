@@ -35,6 +35,7 @@ Usage
 ### CHIP
 - periph-smoketest -v i2c-testboard -bus 1 -wc 132
 - periph-smoketest -v spi-testboard -wp 132
+- periph-smoketest -v onewire-testboard -i2cbus 1
 - periph-smoketest -v gpio 1019 1020
 - periph-smoketest -v gpio 35 193
 

@@ -42,6 +42,14 @@ Usage
 ### ODROID-C1
 - periph-smoketest -v i2c-testboard -bus 2 -wc 83
 - periph-smoketest -v spi-testboard -wp 83
+- periph-smoketest -v onewire-testboard -i2cbus 1
+- periph-smoketest -v gpio 104 115
+
+## Raspberry Pi
+- periph-smoketest -v i2c-testboard -bus 1 -wc 4
+- periph-smoketest -v spi-testboard -wp 4
+- periph-smoketest -v onewire-testboard -i2cbus 1
+- periph-smoketest -v gpio 22 23
 
 PCB and Parts
 -------------

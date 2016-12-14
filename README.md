@@ -33,6 +33,7 @@ Usage
 -----
 
 ### CHIP
+To enable SPI, see http://www.chip-community.org/index.php/Hardware_Information
 - gpio-write 133 1
 - periph-smoketest -v i2c-testboard -bus 1 -wc 132
 - periph-smoketest -v spi-testboard -wp 132

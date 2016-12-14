@@ -33,11 +33,13 @@ Usage
 -----
 
 ### CHIP
+- gpio-write 133 1
 - periph-smoketest -v i2c-testboard -bus 1 -wc 132
 - periph-smoketest -v spi-testboard -wp 132
 - periph-smoketest -v onewire-testboard -i2cbus 1
 - periph-smoketest -v gpio 1019 1020
 - periph-smoketest -v gpio 35 193
+- gpio-write 133 0
 
 ### ODROID-C1
 - periph-smoketest -v i2c-testboard -bus 2 -wc 83

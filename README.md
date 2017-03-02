@@ -1,7 +1,7 @@
 Periph-Tester Board
 ===================
 
-The periph-tester board is a small PCB used to test the https://github.com/periph/periph
+The periph-tester board is a small PCB used to test the https://periph.io/x/periph
 hardware device interface library.
 
 ![pcb](https://644db4de3505c40a0444-327723bce298e3ff5813fb42baeefbaa.ssl.cf1.rackcdn.com/e0db759f008a1230f58606541e16706f.png)

@@ -1,7 +1,7 @@
 Periph-Tester Board
 ===================
 
-The periph-tester board is a small PCB used to test the https://github.com/google/periph
+The periph-tester board is a small PCB used to test the https://github.com/periph/periph
 hardware device interface library.
 
 ![pcb](https://644db4de3505c40a0444-327723bce298e3ff5813fb42baeefbaa.ssl.cf1.rackcdn.com/e0db759f008a1230f58606541e16706f.png)
@@ -13,7 +13,8 @@ The board allows simple testing of i2c, spi, 1-wire, pwm, and analog.
 - 1-wire can be tested be exercising a 1-wire eeprom and a 1-wire temperature sensor.
 - PWM and ADC can be tested by outputting waveforms with varying duty cycles and reading the level of a low-pass filter.
 - A gpio pin is connected to the write-enable of the I2C and SPI eeproms and can be used to
-  simulate certain errors by write-protecting the eeproms.
+  simulate certain errors by write-protecting the eeproms. (In hindsight this creates more pain
+  in ensuring the pin is set correctly than it has true value...)
 
 Standard pin-outs
 -----------------
@@ -27,7 +28,7 @@ The recommended pin-outs for various platforms are as follows.
 | LED      |              | csid1(133)<br>pin U14-32      | gpio100<br>pin 31         |
 | PWM      |              | pwm0(34)<br>pin U13-18        | gpio108<br>pin 33         |
 | ADC      |              | lradc<br>pin U14-11           | adc.ain1<br>pin 37        |
-| GPIO     |              | xpio-p6&p7<br>pins U14-19&20<br>ap-eint1&ap-eint3<br>pins U14-23&24 |                           |
+| GPIO     |              | xio-p6&p7<br>pins U14-19&20<br>ap-eint1&ap-eint3<br>pins U14-23&24 |                           |
 
 Usage
 -----
@@ -71,7 +72,7 @@ Parts can be ordered from digikey:
 - 100uF cap, 4.7k resistors, 2.2k resistor: all std 0603 parts
 
 Total parts cost: ~$10.
-If you are contributing to google/periph and would like
+If you are contributing to periph and would like
 an assembled board, contact the author.
 
 

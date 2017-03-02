@@ -22,12 +22,12 @@ The recommended pin-outs for various platforms are as follows.
 
 | Function | Raspberry Pi | C.H.I.P.                      | ODROID-C1                 |
 | -------- | ------------ | ----------------------------- | ------------------------- |
-| i2c bus  |              | TWI1 (bus 1)<br>pins U13 9&11 | i2ca (bus 1)<br>pins 3&4  |
-| spi bus  |              | bus 32766<br>pins U14 27-30   | bus 0<br>pins 19,21,23,24 |
-| wr-en    |              | csid0(132)<br>pin U14-31      | gpio83<br>pin 7           |
-| LED      |              | csid1(133)<br>pin U14-32      | gpio100<br>pin 31         |
+| i2c bus  | pins 3&5     | TWI1 (bus 1)<br>pins U13 9&11 | i2ca (bus 1)<br>pins 3&5  |
+| spi bus  | pins 19,21,23,24 | bus 32766<br>pins U14 27-30   | bus 0<br>pins 19,21,23,24 |
+| wr-en    | pin 7        | csid0(132)<br>pin U14-31      | gpio83<br>pin 7           |
+| LED      | pin 31       | csid1(133)<br>pin U14-32      | gpio100<br>pin 31         |
 | PWM      |              | pwm0(34)<br>pin U13-18        | gpio108<br>pin 33         |
-| ADC      |              | lradc<br>pin U14-11           | adc.ain1<br>pin 37        |
+| ADC      | N/C          | lradc<br>pin U14-11           | adc.ain1<br>pin 37        |
 | GPIO     |              | xio-p6&p7<br>pins U14-19&20<br>ap-eint1&ap-eint3<br>pins U14-23&24 |                           |
 
 Usage
